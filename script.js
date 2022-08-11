@@ -134,6 +134,12 @@ if(nota_presença == 0){
     
     }else if(media_nota < 8 && nota_presença < 8){
         alert(`A nota do aluno ${nome_aluno} é de de ${media_nota} e sua nota de presença foi de ${nota_presença}: Aluno reprovado :c`)
+    
+    }else if(media_nota >= 8 && nota_presença < 8){
+        alert(`A nota do aluno ${nome_aluno} é de de ${media_nota} e sua nota de presença foi de ${nota_presença}: Reprovado por presença :c`)
+    
+    }else if(media_nota < 8 && nota_presença > 8){
+        alert(`A nota do aluno ${nome_aluno} é de de ${media_nota} e sua nota de presença foi de ${nota_presença}: Reprovado por nota :c`)
     }
 
 
